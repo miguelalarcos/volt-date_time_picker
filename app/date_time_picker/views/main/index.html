@@ -10,7 +10,8 @@
 
 <:Body>
   <div class='xdatetime'>
-    <input type='text' e-click="self.show=!self.show" value="{{attrs.value.strftime(attrs.date_format)}}" />
+    <!--<input type='text' e-click="self.show=!self.show" value="{{attrs.value.strftime(attrs.date_format)}}" />-->
+    <input type='text' disabled="disabled" e-click="self.show=!self.show" value="{{ date_f }}" />
     {{if show}}
     <div class="xdatetime-popover">
       <div class="xdatetime-header">

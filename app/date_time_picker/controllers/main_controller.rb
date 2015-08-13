@@ -2,6 +2,14 @@ module DateTimePicker
   class MainController < Volt::ModelController
     reactive_accessor :show
 
+    def date_f
+      attrs.value.strftime(attrs.date_format)
+    end  
+
+    def date_f=(value)
+      
+    end  
+
     def select_day
       d = attrs.data[:date]
       t = attrs.value
