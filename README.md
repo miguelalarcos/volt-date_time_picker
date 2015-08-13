@@ -1,6 +1,6 @@
 # Volt::DateTimePicker
 
-TODO: Write a gem description
+A date-time picker.
 
 ## Installation
 
@@ -18,7 +18,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+<:date_time_picker time={{true}} value="{{page._datetime}}" date_format='%d-%m-%Y %H:%M' />
 
 ## Contributing
 
