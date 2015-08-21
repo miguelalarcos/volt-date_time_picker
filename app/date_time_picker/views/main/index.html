@@ -10,18 +10,17 @@
 
 <:Body>
   <div class='xdatetime'>
-    <!--<input type='text' e-click="self.show=!self.show" value="{{attrs.value.strftime(attrs.date_format)}}" />-->
     <input type='text' disabled="disabled" e-click="self.show=!self.show" value="{{ date_f }}" />
     {{if show}}
     <div class="xdatetime-popover">
       <div class="xdatetime-header">
-        <span e-click="minusMonth"><i class="fa fa-minus"></i></span>
+        <span class="minus-month" e-click="minusMonth"><i class="fa fa-minus"></i></span>
         {{attrs.value.strftime('%m')}}
-        <span e-click="plusMonth"><i class="fa fa-plus"></i></span>
+        <span class="plus-month" e-click="plusMonth"><i class="fa fa-plus"></i></span>
         <span>&nbsp;&nbsp;</span>
-        <span e-click="minusYear"><i class="fa fa-minus"></i></span>
+        <span class="minus-year" e-click="minusYear"><i class="fa fa-minus"></i></span>
         {{attrs.value.strftime('%y')}}
-        <span e-click="plusYear"><i class="fa fa-plus"></i></span>
+        <span class="plus-year" e-click="plusYear"><i class="fa fa-plus"></i></span>
       </div>
       {{weeks.each do |w|}}
       <:week w="{{w}}" value="{{attrs.value}}" hide_calendar="{{hide_calendar}}" />
